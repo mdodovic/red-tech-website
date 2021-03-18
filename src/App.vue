@@ -1,26 +1,96 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Welcome to Your Vue.js App" />
+  <main>
+    <section class="section">
+      <div class="container">
+        <figure class="image logo-size center">
+          <img src="./assets/images/logo.svg">
+        </figure>
+        <h2 class="title center has-text-centered">Computer Science explained!</h2>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <figure class="image center">
+          <img src="./assets/images/poster.png">
+        </figure>
+      </div>
+    </section>
+    <div class="clipped-background">
+      <section class="section">
+          <div class="container mt-6">
+            <h1 class="title has-text-centered mb-6">Our team</h1>
+            <div class="columns is-8 is-centered mt-6 is-multiline">
+              <div class="column is-one-third" v-for="person in persons" :key="person.name">
+                <Card :person="person"></Card>
+              </div>
+            </div>
+          </div>
+      </section>
+    </div>
+  </main>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import Card from './components/Card.vue';
 
 export default {
   name: "App",
   components: {
-    HelloWorld,
+    Card,
   },
+  data() {
+    return {
+      persons: [{
+        name: "Andrija Jelenkovic",
+        position: "Software Engineer @ Logeecom",
+        image: "img_3916.png",
+        }, {
+        name: "Djordje Dimitrijevic",
+        position: "Software Engineer @ Algotech",
+        image: "djordje.jpg",
+        }, {
+        name: "Matija Dodovic",
+        position: "2x Awardee for the best student on Module Computer Engineering and Information theory",
+        image: "doda.jpg",
+        }, {
+        name: "Mladen Basic",
+        position: "Software Engineer intern @ Microsoft",
+        image: "djordje.jpg",
+        }, {
+        name: "Damjan Denic",
+        position: "Software Engineer Intern @ Microsoft",
+        image: "damjan.jpg",
+        }, {
+        name: "Milan Cupac",
+        position: "Top 3% of students at the Techincal University of Munich",
+        image: "milan.jpg",
+        },
+      ]}
+  }
 };
 </script>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+
+@import './assets/scss/main.scss';
+
+.logo-size {
+  max-width: 50%;
 }
+
+.center {
+  margin: 0 auto;
+}
+
+.clipped-background {
+  background:
+    linear-gradient(322deg, 
+      $red, rgba($red, 0) 70%),
+    linear-gradient(178deg,
+      $mandarine, rgba($mandarine, 0) 70%),
+    linear-gradient(24deg,
+      $rose, rgba($rose, 0) 35%);
+  
+}
+
 </style>
