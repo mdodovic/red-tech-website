@@ -26,6 +26,13 @@
             </div>
           </div>
       </section>
+      <footer class="footer transparent">
+        <div class="content has-text-centered">
+          <p class="has-text-dark">
+            by <a href="https://jelenkovic.xyz" class="has-text-dark"><strong>Andrija Jelenkovic</strong></a>. Copyright © 2021. All Rights Reserved.
+          </p>
+        </div>
+      </footer>
     </div>
   </main>
 </template>
@@ -54,8 +61,8 @@ export default {
         image: "doda.jpg",
         }, {
         name: "Mladen Basic",
-        position: "Software Engineer intern @ Microsoft",
-        image: "djordje.jpg",
+        position: "Software Engineer Intern @ Microsoft",
+        image: "mladen.png",
         }, {
         name: "Damjan Denic",
         position: "Software Engineer Intern @ Microsoft",
@@ -91,6 +98,10 @@ export default {
     linear-gradient(24deg,
       $rose, rgba($rose, 0) 35%);
   
+}
+
+.transparent {
+  background: transparent;
 }
 
 </style>
