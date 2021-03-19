@@ -51,26 +51,32 @@ export default {
         name: "Andrija Jelenkovic",
         position: "Software Engineer @ Logeecom",
         image: "img_3916.png",
+        linkedin: "https://www.linkedin.com/in/andrija-jelenkovic-5740b4194/",
         }, {
         name: "Djordje Dimitrijevic",
         position: "Software Engineer @ Algotech",
         image: "djordje.jpg",
+        linkedin: "https://www.linkedin.com/in/djordje-dimitrijevic14/",
         }, {
         name: "Matija Dodovic",
         position: "2x Awardee for the best student on Module Computer Engineering and Information theory",
         image: "doda.jpg",
+        linkedin: "https://www.linkedin.com/in/matija-dodovic-b8b4b8113/",
         }, {
         name: "Mladen Basic",
         position: "Software Engineer Intern @ Microsoft",
         image: "mladen.png",
+        linkedin: "https://www.linkedin.com/in/basic-mladen/"
         }, {
         name: "Damjan Denic",
         position: "Software Engineer Intern @ Microsoft",
         image: "damjan.jpg",
+        linkedin: "https://www.linkedin.com/in/damjan-deni%C4%87-5212b3166/"
         }, {
         name: "Milan Cupac",
         position: "Top 3% of students at the Techincal University of Munich",
         image: "milan.jpg",
+        linkedin: "https://www.linkedin.com/in/milan-cupac/"
         },
       ]}
   }

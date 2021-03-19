@@ -8,9 +8,14 @@
           </figure>
         </div>
       </div>
-
-      <h3 class="title has-text-centered is-5">{{person.name}}</h3>
-      <h4 class="subtitle has-text-centered is-6">{{person.position}}</h4>
+      <a :href="person.linkedin" class="is-centered is-flex is-justify-content-center is-align-items-center">
+        <h3 class="title is-5 is-inline-block mb-1 mr-1">{{person.name}}</h3>
+        <figure class="image is-16x16 is-inline-block">
+          <img src="../assets/images/logo-linkedin.svg" alt="LinkedIn profile">
+        </figure>
+      </a>
+      <h4 class="subtitle has-text-centered is-6 mt-3">{{person.position}}</h4>
+      
     </div>
   </div>
 </template>
@@ -22,7 +27,8 @@ export default {
       name: String,
       position: String,
       image: String,
-      description: String
+      description: String,
+      linkedin: String
     }
   }
 }
