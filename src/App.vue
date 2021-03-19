@@ -3,22 +3,22 @@
     <section class="section">
       <div class="container">
         <figure class="image logo-size center">
-          <img src="./assets/images/logo.svg">
+          <img src="./assets/images/logo.svg" alt="Red!Tech logo">
         </figure>
-        <h2 class="title center has-text-centered">Computer Science explained!</h2>
+        <h1 class="title center has-text-centered">Computer Science explained!</h1>
       </div>
     </section>
     <section class="section">
       <div class="container">
         <figure class="image center">
-          <img src="./assets/images/poster.png">
+          <img src="./assets/images/poster.png" alt="IT Isn't Rocket Science lecture curriculum">
         </figure>
       </div>
     </section>
     <div class="clipped-background">
       <section class="section">
           <div class="container mt-6">
-            <h1 class="title has-text-centered mb-6">Our team</h1>
+            <h2 class="title has-text-centered mb-6">Our team</h2>
             <div class="columns is-8 is-centered mt-6 is-multiline">
               <div class="column is-one-third" v-for="person in persons" :key="person.name">
                 <Card :person="person"></Card>
